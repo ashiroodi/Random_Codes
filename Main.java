@@ -33,6 +33,13 @@ public class Main {
 		end_user_lname.mysurname();
 		Main end_user_number = new Main();
 		end_user_number.mynumber();
+		
+		int numbers = (int)(Math.random() * 10);
+		while (numbers < 10) {
+			
+			System.out.println("Current Value is " + numbers);
+			numbers++;	
+		}
 	
 	}
 }
