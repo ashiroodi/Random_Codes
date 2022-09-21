@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
-
-
 import re ##importing one of the pythong libraries called the RegEX
 
 end_user_name = input("Enter Your Name :") ## asks the user for their name
