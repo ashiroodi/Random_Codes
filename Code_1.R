@@ -24,3 +24,4 @@
 > num_1 + num
 [1] 50
 
+## this is also how to make comment in R
