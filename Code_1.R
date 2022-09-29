@@ -144,3 +144,18 @@ In print.default(b, "Is greater than", a) : NAs introduced by coercion
     + paste(a , "Is Smaller than", b)
     + }
 [1] "350 equals to 350"
+[1] "Hello, Wold"
+> num <- 41
+> if (num < 50) {}
+NULL
+> if (num < 50) {
++     if (num == 50) {
++         paste(num, "Equals to", 50)
++     } else {
++         Print("\"Num\" Is not Equals to 50")
++     }
++ } else if(num > 50) {
++     paste(num,"Bigger Than",50)
++ } else {
++     print("Error")
++ }
