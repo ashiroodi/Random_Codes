@@ -159,3 +159,90 @@ NULL
 + } else {
 +     print("Error")
 + }
+# Lets use the AND Operator
+> a <- 100
+> b <- 200
+> c <- 100
+> if (a < b & c == a) {
+  + print("Condition has meet")
+  + } else{
+    + print("ERROR")
+    + }
+[1] "Condition has meet"
+> # Lets user OR Operator
+  > if (a > b | b > a) {
+    + print("Condition has meet")
+    + } else {
+      + print("ERROR")
+      + }
+[1] "Condition has meet"
+> # Lets use a while loop
+  > while(a < 115) {
+    + print(a)
+    + a <- a + 1
+    + if ( a == 112) {
+      +     break
+      + }
+    + }
+[1] 100
+[1] 101
+[1] 102
+[1] 103
+[1] 104
+[1] 105
+[1] 106
+[1] 107
+[1] 108
+[1] 109
+[1] 110
+[1] 111
+> while (b < 230) {
+  + paste("Current Value for a is ", b)
+  + b <- b + 4
+  + if (b == 225) {
+    + break
+    + }
+  + }
+> ## Lets make a list
+  > fruits <- list("Apple","Banana","Cherry")
+> for (name in fruits) {
+  +     print(name)
+  + }
+[1] "Apple"
+[1] "Banana"
+[1] "Cherry"
+> ## lets make nested loops
+  > adj <- list("Red","Big","Tasty")
+> for(names in fruits) {
+  +     for(colours in adj) {
+    +         print(names,colours)
+    + }
+  + ]
+Error: unexpected ']' in:
+  "}
+]"
+> for (name in fruits) {
+  +     for (colors in adj) {
+    +         print(name,colors)
+    + }
+  + }
+Error in print.default(name, colors) : 
+  invalid printing digits -2147483648
+In addition: Warning message:
+  In print.default(name, colors) : NAs introduced by coercion
+> ## error since in R we have to use paste to connect them together
+  > for (name in fruits) {
+    +     for (color in adj) {
+      +     print(paste(name,color))
+      + }
+    + }
+[1] "Apple Red"
+[1] "Apple Big"
+[1] "Apple Tasty"
+[1] "Banana Red"
+[1] "Banana Big"
+[1] "Banana Tasty"
+[1] "Cherry Red"
+[1] "Cherry Big"
+[1] "Cherry Tasty"
+> 
